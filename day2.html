@@ -1,0 +1,31 @@
+<!--Variabkes-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day2</title>
+  </head>
+  <body>
+    <script>
+      let Quantity = 0;
+    </script>
+    <button onclick="console.log(`cart Quantity:${Quantity}`);">
+      Show Quantity
+    </button>
+    <button onclick="Quantity+=1;console.log(`cart Quantity:${Quantity}`);">
+      Add to cart
+    </button>
+    <button onclick="Quantity+=2;console.log(`cart Quantity:${Quantity}`);">
+      +2
+    </button>
+    <button onclick="Quantity+=3;console.log(`cart Quantity:${Quantity}`);">
+      +3
+    </button>
+    <button
+      onclick="Quantity=0;console.log(`Cart was Reset.`);console.log(`cart Quantity:${Quantity}`);"
+    >
+      Reset cart
+    </button>
+  </body>
+</html>
