@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <p>Rock Paper Scissor</p>
+
+    <button onclick="playerMove('Rock')">Rock</button>
+    <button onclick="playerMove('Paper')">Paper</button>
+    <button onclick="playerMove('Scissor')">Scissor</button>
+
+    <script>
+      function playerMove(playerChoice) {
+        const computerGuess = computerPick();
+        let result = "";
+
+        if (playerChoice === "Scissor") {
+          if (computerGuess === "Rock") {
+            result = "You Lose!";
+          } else if (computerGuess === "Paper") {
+            result = "You Win!";
+          } else {
+            result = "Tie!";
+          }
+        } else if (playerChoice === "Paper") {
+          if (computerGuess === "Rock") {
+            result = "You Win!";
+          } else if (computerGuess === "Paper") {
+            result = "Tie!";
+          } else {
+            result = "You Lose!";
+          }
+        } else {
+          // Rock
+          if (computerGuess === "Rock") {
+            result = "Tie!";
+          } else if (computerGuess === "Paper") {
+            result = "You Lose!";
+          } else {
+            result = "You Win!";
+          }
+        }
+
+        alert(
+          `You choose ${playerChoice}. Computer choose ${computerGuess}. ${result}`
+        );
+      }
+
+      function computerPick() {
+        const random = Math.random();
+
+        if (random < 1 / 3) {
+          return "Rock";
+        } else if (random < 2 / 3) {
+          return "Paper";
+        } else {
+          return "Scissor";
+        }
+      }
+    </script>
+  </body>
+</html>
