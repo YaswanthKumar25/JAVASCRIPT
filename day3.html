@@ -8,16 +8,7 @@
   <body>
     <p>Rock Paper Scissor</p>
     <button
-      onclick="
-   let computerguess='';
-   const random=Math.random()
-   if (random <= 1/3){
-    computerguess='Rock'
-   } else if (random >=1/3 && random<=2/3){
-    computerguess='Paper'
-   } else {
-    computerguess='Scissor'
-   }
+      onclick="computerPick();
    let result='';
    if (computerguess == 'Rock'){
     result='Tie!'
@@ -32,17 +23,7 @@
       Rock
     </button>
     <button
-      onclick="
-    
-   let computerguess='';
-   const random=Math.random()
-   if (random <= 1/3){
-    computerguess='Rock'
-   } else if (random >=1/3 && random<=2/3){
-    computerguess='Paper'
-   } else {
-    computerguess='Scissor'
-   }
+      onclick="computerPick();
    let result='';
    if (computerguess == 'Rock'){
     result='You Win!'
@@ -56,16 +37,7 @@
       Paper
     </button>
     <button
-      onclick="
-   let computerguess='';
-   const random=Math.random()
-   if (random <= 1/3){
-    computerguess='Rock'
-   } else if (random >=1/3 && random<=2/3){
-    computerguess='Paper'
-   } else {
-    computerguess='Scissor'
-   }
+      onclick="computerPick();
    let result='';
    if (computerguess == 'Rock'){
     result='You Lose!'
@@ -78,5 +50,18 @@
     >
       Scissor
     </button>
+    <script>
+      let computerguess = "";
+      function computerPick() {
+        const random = Math.random();
+        if (random <= 1 / 3) {
+          computerguess = "Rock";
+        } else if (random >= 1 / 3 && random <= 2 / 3) {
+          computerguess = "Paper";
+        } else {
+          computerguess = "Scissor";
+        }
+      }
+    </script>
   </body>
 </html>
