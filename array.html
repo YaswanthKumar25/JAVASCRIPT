@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array-deatail</title>
+  </head>
+  <body>
+    <script>
+      arr = [1, 2, 3];
+
+      arr.push(10); //   The `arr.push(10);` method is adding the value `10` to the end of the array `arr`.
+      arr.pop(); //   The `arr.pop();` method is removing the last element from the array `arr`.
+      arr.shift(); //   The `arr.shift();` method is removing the first element from the array `arr`.
+      arr.unshift(12); //   The `arr.unshift(12);` method is adding the value `12` to the beginning of the array `arr`.
+      //   The `arr.splice(0,1,99)` method is removing 1 element starting from index 0 in the array `arr`
+      //   and replacing it with the value `99`. In this case, it will remove the first element (index 0)
+      //   from the array and replace it with `99`.
+      arr.splice(0, 1, 99);
+      //   The `arr.splice(0,1);` method is removing 1 element starting from index 0 in the array `arr`.
+      //   In this case, it will remove the first element (index 0) from the array.
+      arr.splice(0, 1);
+      //   The line `arr[0]=10;` is assigning the value `10` to the first element of the array `arr`. In
+      //   this case, it is replacing the value at index 0 of the array with `10`.
+      arr[0] = 10;
+      //   The `arr.includes(3);` method is checking if the value `3` is present in the array `arr`. It
+      //   returns `true` if the value `3` is found in the array, otherwise it returns `false`.
+      arr.includes(3);
+      //  The `arr.indexOf(3);` method is searching the array `arr` for the value `3` and returning the
+      //  index of the first occurrence of `3` in the array. If `3` is not found in the array, it will
+      //  return -1.
+      arr.indexOf(3);
+      console.log(arr.join("")); //   The `arr.join("")` method is joining all the elements of the array `arr` into a
+      //   single string, with each element separated by an empty string (""). The resulting
+
+      arr1 = [1, 2, 3, 4, 5];
+      arr2 = [6, 7, 8, 9, 10];
+      //   The `arr1.concat(arr2);` method is combining two arrays, `arr1` and `arr2`, into a single array. It
+      //   creates a new array that contains all the elements from `arr1` followed by all the elements from `arr2`.
+      arr1.concat(arr2);
+      console.log(arr1.concat(arr2));
+
+      arr3 = [1, 5, 10];
+      //   The line `arr4 = arr3.slice();` is creating a shallow copy of the array `arr3` and assigning
+      //   it to the variable `arr4`. This means that `arr4` will contain the same elements as `arr3`, but it will be a
+      //   separate array in memory. Any changes made to `arr4` will not affect `arr3`, and vice versa.
+      arr4 = arr3.slice();
+
+    //  The code snippet `array = [1, 2, 3, 4, 5]; const [a, b, ...rest] = array; console.log(a);
+    //  console.log(b); console.log(rest);` is utilizing destructuring assignment in JavaScript.
+      array = [1, 2, 3, 4, 5];
+      const [a, b, ...rest] = array;
+      console.log(a);
+      console.log(b);
+      console.log(rest);
+    </script>
+  </body>
+</html>

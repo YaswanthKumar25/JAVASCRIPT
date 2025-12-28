@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple TODO List</title>
+  </head>
+  <body>
+    <input type="text" class="js-input" />
+    <input type="date" class="js-date" />
+    <button class="js-add" onclick="Todo()">Add</button>
+    <div class="js-todo"></div>
+
+    <script>
+      const tOdoArray = [];
+      displayTodo();
+      function displayTodo() {
+        let todoElement = "";
+        for (let i = 0; i < tOdoArray.length; i++) {
+          const items = tOdoArray[i];
+          const { name, dueDate } = items;
+          const html = `<p class="displaytodo">${name}${dueDate}
+          <button onclick="tOdoArray.splice(${i},1);displayTodo();
+            ">Delete</button></p>`;
+          todoElement += html;
+        }
+        document.querySelector(".js-todo").innerHTML = todoElement;
+      }
+      function Todo() {
+        const inputElement = document.querySelector(".js-input");
+        const dateElement = document.querySelector(".js-date");
+        const inputValue = inputElement.value;
+        const datetValue = dateElement.value;
+        const item = inputValue;
+        const date = datetValue;
+        tOdoArray.push({ name: item, dueDate: date });
+        console.log(tOdoArray);
+        displayTodo();
+        inputElement.value = "";
+      }
+    </script>
+  </body>
+</html>
