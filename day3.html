@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Rock Paper Scissor</p>
+    <button
+      onclick="computerPick();
+   let result='';
+   if (computerguess == 'Rock'){
+    result='Tie!'
+   } else if (computerguess == 'Paper'){
+    result='You Lose!'
+   } else {
+    result='You Win!'
+   }
+   alert(` You Choose Rock .Computer chose ${computerguess}. ${result}`)
+   "
+    >
+      Rock
+    </button>
+    <button
+      onclick="computerPick();
+   let result='';
+   if (computerguess == 'Rock'){
+    result='You Win!'
+   } else if (computerguess == 'Paper'){
+    result='Tie'
+   } else {
+    result='You Lose!'
+   }
+   alert(` You Choose Paper .Computer chose ${computerguess}. ${result}`)"
+    >
+      Paper
+    </button>
+    <button
+      onclick="computerPick();
+   let result='';
+   if (computerguess == 'Rock'){
+    result='You Lose!'
+   } else if (computerguess == 'Paper'){
+    result='You Win!'
+   } else {
+    result='Tie'
+   }
+   alert(` You Choose Scissor .Computer chose ${computerguess}. ${result}`)"
+    >
+      Scissor
+    </button>
+    <script>
+      let computerguess = "";
+      function computerPick() {
+        const random = Math.random();
+        if (random <= 1 / 3) {
+          computerguess = "Rock";
+        } else if (random >= 1 / 3 && random <= 2 / 3) {
+          computerguess = "Paper";
+        } else {
+          computerguess = "Scissor";
+        }
+      }
+    </script>
+  </body>
+</html>

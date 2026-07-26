@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day5-objectst</title>
+  </head>
+  <body>
+    <!-- The script block is creating an object named `food` with two properties: `name` with the value
+   "birayani" and `price` with the value 250. This object is then logged to the console using
+   `console.log(food)`. -->
+    <script>
+      const food = {
+        name: "biriyani",
+        price: 250,
+      };
+      //print all properties
+      console.log(food);
+      //print or access any specific property
+      console.log(food.name);
+      //update property values
+      food.name = "veg biriyani";
+      console.log(food);
+      // add new property to object
+      food.newproperty = "newvalue";
+      console.log(food);
+      //delete property with value  from object
+      delete food.newproperty;
+      console.log(food);
+
+      const car ={
+        brand :"Toyota",
+        model : "Camry",
+        year : 2020
+      }
+      console.log(car.model,car.year);
+      console.log(car.year=2022);
+      car.color='black';
+      console.log(car);
+      delete car.model;
+      console.log(car);
+    </script>
+  </body>
+</html>

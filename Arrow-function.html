@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* The code defines a function named `greet` that logs "hello" to the console. It then
+      immediately calls the `greet` function, which results in "hello" being logged to the console
+      when the script is executed. */
+      function greet() {
+        console.log("hello");
+      }
+      greet();
+
+      /* The function `greet1` is defined with a parameter `text`. Inside the function, it logs a
+      message to the console using template literals to concatenate the string "hello" with the
+      value of the `text` parameter.*/
+      function greet1(text) {
+        console.log(`hello ${text}`);
+      }
+      greet1("yashu");
+
+      /*The code defines a function named `greeat2` that simply returns the string "yashu". Then, the
+      function is called and its return value is stored in a variable `fun`. Finally, the value of
+      `fun` is logged to the console, which will output "yashu" when the script is executed. */
+      function greeat2() {
+        return "yashu";
+      }
+      const fun = greeat2();
+      console.log(fun);
+
+      /* The code snippet defines an object `obj1` with two properties: `name` with the value "hello" and
+    `num` which is a function that logs "hello4" to the console. */
+      const obj1 = {
+        name: "hello",
+        num: function () {
+          console.log("hello4");
+        },
+      };
+      obj1.num();
+
+      /* The code snippet `const how = function () {
+              console.log("hello");
+            };
+            how();` is defining a constant variable `how` and assigning it a function expression.
+      The function defined logs "hello" to the console. */
+      const how = function () {
+        console.log("hello");
+      };
+      how();
+
+      /* The code snippet you provided defines a function named `greet` that takes a parameter `params`.
+    Inside the `greet` function, it logs "hello" to the console and then immediately calls the
+    function that is passed as the `params` argument. */
+      function greet(params) {
+        console.log("hello");
+        params();
+      }
+      greet(() => {
+        console.log("from run");
+      });
+
+      /* The `setTimeout` function in the provided code snippet is used to execute a function after a
+     specified delay in milliseconds. In this case, the function being executed is
+     `console.log("Time-Out")`, and it will be executed after a delay of 3000 milliseconds (3
+     seconds). This means that after 3 seconds, the message "Time-Out" will be logged to the
+     console. */
+      setTimeout(function () {
+        console.log("Time-Out");
+      }, 3000);
+      /* The `setInterval` function in the provided code snippet is used to repeatedly execute a
+      function at specified intervals. In this case, the function being executed is
+      `console.log("Interval")`, and it will be executed every 3000 milliseconds (3 seconds). This
+      means that the message "Interval" will be logged to the console every 3 seconds until the
+      script is stopped or the interval is cleared. */
+      setInterval(() => {
+        console.log("Interval");
+      }, 3000);
+
+      /* The code snippet `const greet = () => {
+              console.log("hello");
+            };
+            greet();` is defining a constant arrow function named `greet` that logs "hello" to the
+      console. */
+      const greet = () => {
+        console.log("hello");
+      };
+      greet();
+
+      /* The code snippet `const greet2 = (p1, p2) => {
+             return p1 + p2;
+           };` is defining an arrow function named `greet2` that takes two parameters `p1` and `p2`.
+     This arrow function then returns the result of adding `p1` and `p2` together. */
+      const greet2 = (p1, p2) => {
+        return p1 + p2;
+      };
+      /* The code snippet `const fun = greet2(2, 3); console.log(fun); const num = () => 2 + 5;
+  console.log(num());` is performing the following actions: */
+      const fun = greet2(2, 3);
+      console.log(fun);
+      const num = () => 2 + 5;
+      console.log(num());
+
+      /* The code snippet is creating an array named `myArray` containing the values `[1, 2, 3, 4, 5]`.
+      Then, it is using the `forEach` method on the `myArray` array to iterate over each element in
+      the array. */
+      const myArray = [1, 2, 3, 4, 5];
+      myArray.forEach((items) => {
+        console.log(items);
+      });
+    </script>
+  </body>
+</html>

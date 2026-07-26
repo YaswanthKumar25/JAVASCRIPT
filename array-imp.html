@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      arr = [1, 2, 3, 4, 5];
+
+      for (i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+      }
+
+      arr.forEach(itration);
+      function itration(i, index) {
+        console.log(index + ":" + i);
+      }
+
+      arr.forEach(function itration(i, index) {
+        console.log(index + ":" + i);
+      });
+
+      const multiple = arr.map(function (i) {
+        return i * 10;
+      });
+      console.log(multiple);
+
+      const odd = arr.filter(function (i) {
+        return i % 3 === 0;
+      });
+      console.log(odd);
+
+      const total = arr.reduce(function (sum, num) {
+        return sum + num;
+      }, 0);
+      console.log(total);
+    </script>
+  </body>
+</html>

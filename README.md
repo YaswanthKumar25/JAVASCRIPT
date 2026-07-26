@@ -1,0 +1,52 @@
+# JavaScript Practice Repository
+
+A collection of hands-on JavaScript practice files covering fundamentals, DOM manipulation, and async programming.
+
+## What This Repo Contains
+
+This repository includes:
+
+- JavaScript basics (`day1.html` to `day5-objects.html`)
+- Functions and objects practice
+- Arrays and arrow functions
+- DOM practice projects
+- Rock Paper Scissors game versions
+- Async JavaScript (`promises.js`, `async-await.js`)
+
+## File Overview
+
+- `day1.html`, `day2.html`, `day3.html` - early JS practice
+- `day4-functions.html` - function concepts
+- `day5-objects.html` - object practice
+- `day5-update-game.html` - game logic updates
+- `array.html`, `array-imp.html` - array methods and examples
+- `Arrow-function.html` - arrow function examples
+- `DOM.html` - basic DOM operations
+- `DOM-Projects.html`, `DOM-Project2.html` - DOM mini projects
+- `Final-Rock Paper Scissors.html` - final game version
+- `TODO.html` - todo-style DOM practice
+- `promises.js` - Promise examples
+- `async-await.js` - async/await examples
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YaswanthKumar25/JAVASCRIPT.git
+   ```
+2. Open the folder in VS Code (or any editor).
+3. Run any `.html` file in your browser.
+4. For `.js` files, run in browser console or Node.js where applicable.
+
+## Learning Topics Covered
+
+- Variables and data types
+- Conditionals and loops
+- Functions and arrow functions
+- Objects and arrays
+- DOM selection and event handling
+- Promises and async/await
+
+## Author
+
+Maintained by `YaswanthKumar25`.
